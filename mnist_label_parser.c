@@ -1,9 +1,8 @@
 /*
  ============================================================================
- Name        : mnist_label_file_parser.c
+ Name        : mnist_label_parser.c
  Author      : Afroz Mohiuddin
  Version     : 1
- Copyright   :
  Description : Parser for mnist label file.
  ============================================================================
  */

@@ -3,7 +3,6 @@
  Name        : hex_lib.c
  Author      : Afroz Mohiuddin
  Version     : 1
- Copyright   :
  Description : Hexadecimal libraries.
  ============================================================================
  */

@@ -3,7 +3,6 @@
  Name        : macros.h
  Author      : Afroz Mohiuddin
  Version     : 1
- Copyright   :
  Description : Certain useful macros.
  ============================================================================
  */
