@@ -52,8 +52,9 @@ int main(int argc, char** argv) {
 
   char label_byte;
   while (fread(&label_byte, sizeof(char), 1, input_file_pointer)) {
-    int label = (int) hex_char_to_int(label_byte);
-    int char_written = fprintf(output_file_pointer, "%"PRId32"\n", label);
+    int char_written = fprintf(output_file_pointer,
+                               "%"PRId32"\n",
+                               hex_char_to_int(label_byte));
     CHECK(char_written);
   }
 
