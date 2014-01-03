@@ -18,7 +18,7 @@ t10k-labels-idx1-ubyte.gz:   test set labels (4542 bytes)
 
 The files are in a very simple format as follows:
 
-# TRAINING SET LABEL FILE (train-labels-idx1-ubyte):
+### TRAINING SET LABEL FILE (train-labels-idx1-ubyte):
 
 ````
 [offset] [type]          [value]          [description]
@@ -29,7 +29,7 @@ The files are in a very simple format as follows:
 ````
 The labels values are 0 to 9.
 
-# TRAINING SET IMAGE FILE (train-images-idx3-ubyte):
+### TRAINING SET IMAGE FILE (train-images-idx3-ubyte):
 
 ````
 [offset] [type]          [value]          [description]
