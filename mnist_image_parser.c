@@ -68,8 +68,7 @@ int main(int argc, char** argv) {
       CHECK(char_written);
 
       // A graphic of the number this represents.
-      int32_t col = idx % num_cols;
-      if (col == 0) printf("\n");
+      if (idx % num_cols == 0) printf("\n");
       if (image_pixel_value < 10) {
         printf(".");
       } else {
@@ -79,23 +78,6 @@ int main(int argc, char** argv) {
     printf("\n----------------------------------------------------------\n");
     fprintf(output_file_pointer, "\n");
   }
-
-  /*
-  int32_t row = 0, col = 0;
-  for (row = 0; row < num_rows; ++row) {
-    for (col = 0; col < num_rows; ++col) {
-      char byte;
-      CHECK(fread(&byte, sizeof(char), 1, input_file_pointer));
-      int32_t pixel_value = hex_char_to_int(byte);
-      if (pixel_value < 1) {
-        printf(".");
-      } else {
-        printf("*");
-      }
-    }
-    printf("\n");
-  }
-  */
 
   fclose(input_file_pointer);
   fclose(output_file_pointer);
