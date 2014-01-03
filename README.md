@@ -18,7 +18,7 @@ t10k-labels-idx1-ubyte.gz:   test set labels (4542 bytes)
 
 The files are in a very simple format as follows:
 
-### TRAINING SET LABEL FILE (train-labels-idx1-ubyte):
+#### TRAINING SET LABEL FILE (train-labels-idx1-ubyte):
 
 ````
 [offset] [type]          [value]          [description]
@@ -29,7 +29,7 @@ The files are in a very simple format as follows:
 ````
 The labels values are 0 to 9.
 
-### TRAINING SET IMAGE FILE (train-images-idx3-ubyte):
+#### TRAINING SET IMAGE FILE (train-images-idx3-ubyte):
 
 ````
 [offset] [type]          [value]          [description]
@@ -42,6 +42,12 @@ The labels values are 0 to 9.
 
 Pixels are organized row-wise. Pixel values are 0 to 255. 0 means background
 (white), 255 means foreground (black).
+
+#### Decoded Labels and Images
+
+The file ````train_labels.txt.gz```` contains the label of image ````i```` on the ````i^{th}```` line.
+
+The file ````train_images.txt.gz```` contains, on each row, the grey scale value of the pixels separated by a space in row major format, i.e. the rows are appended.
 
 --
 
